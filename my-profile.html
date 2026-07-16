@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my-profile</title>
+</head>
+<link href="styles.css" rel="stylesheet">
+<body>
+
+  <div id="header"></div>
+
+<button onclick="toggle()">==</button>
+  <div class="my-profile">
+    <div class="my-profile-2">
+    <img src="cat1.jpeg" class="my-profile-img">
+    <h2>My Profile</h2>
+    </div>
+    <P class="manage">Manage your personal information, account settings and preferences</P>
+  </div>
+
+  <div class="side-bar">
+    <img src="cat3.jpeg" class="side-bar-img">
+    <div>
+      <h2>Salamat Ghali,</h2>
+      <p>Student ID:81311</p>
+      <p>Department:HEALTH</p>
+      <p>Level: 400L</p>
+      <p>Status: Graduate!</p>
+    </div>
+
+    <div class="last-div-2">
+
+      <div class="last-div">
+      <p>CGPA: 4.5</p>
+      <p>Level: 300l</p>
+    </div>
+    <div class="last-div">
+      <p>CGPA: 4.8</p>
+      <p>Level: 200l</p>
+    </div>
+    </div>
+  </div>
+
+    <div class="middle-div">
+      <div class="mid-div-1">
+        <div class="last-img-div">
+          <img src="cat7.jpg" class="last-img-1">
+          <h2>Personal information</h2>
+        </div>
+        <button class="last-btn">EDIT</button>
+        <hr>
+      </div>
+    
+
+
+
+      <div class="form-div">
+        <form class="form">
+        <label>Username:</label>
+        <input type="text" placeholder=" username">
+        <label>Username:</label>
+        <input type="text" placeholder=" username">
+        <label>Username:</label>
+        <input type="text" placeholder=" username">
+        <label>Username:</label>
+        <input type="text" placeholder=" username">
+        </form>
+      </div>
+
+      <button type="submit" class="btn-1" onclick="toShow()"> Save Changes</button>
+      <button type="submit" class="btn-1"> Reset</button>
+    </div>
+    
+
+    <div class="middle-div-2">
+      <div class="mid-div-2">
+        <div class="last-img-div-2">
+          <img src="cat7.jpg" class="last-img-2">
+          <h2 id="change">Change Password?</h2>
+        </div>
+        <button class="Click-btn">Forget Password?</button>
+        <button class="Click-btn">Create New Account</button>
+      </div>
+    </div>
+
+    <script>
+
+      function toCalculate(){
+        return (fareheit-32)*9/5
+      }
+      function toShow(){
+        const x = document.getElementById('input').value;
+        const y = toCalculate(x);
+        document.getElementById('change').innerHTML = y
+      }
+
+      fetch('header.html')
+          .then(res=>res.text())
+          .then(data =>{
+            document.getElementById('header').innerHTML=data
+          })
+      function toggle(){
+        document.getElementById('side-bar').classList.toggle('hide')
+      }
+    </script>
+
+    
+    
+</body>
+</html>

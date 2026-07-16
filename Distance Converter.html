@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distance Converter</title>
+  <style>
+    body{
+      margin: 140px auto;
+      background-color: rgb(214, 205, 205);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .converter-div{
+      background-color:brown;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    #answer{
+      background-color: rgb(107, 21, 21);
+      color: white;
+      padding: 4px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #mile, #submit{
+      width: 100px;
+      padding: 10px;
+      border: none;
+    }
+    #submit{
+      background-color: rgb(223, 48, 48);
+      
+      color: white;
+
+    }
+    h2{
+      text-align: center;
+      display: block;
+    }
+    h3{
+      margin-bottom: 10px;
+    }
+    h4{
+      color: white;
+      margin: 10px auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+
+    <h2>Folak Project</h2>
+  <div class="converter-div">
+    <h3> Distance conversion</h3>
+     <h4> miles to kilometers</h4>
+    <form method="post" id="convert">
+      <input type="text" placeholder="Distance" id="mile">
+      <input type="submit" id="submit">
+    </form>
+  <div id="answer">
+    <p>Answer goes here</p>
+  </div>
+  <button onclick="
+  myFruit()
+  ">Delete some fruits here</button>
+  <p id="fruit"></p>
+  <p id="children"></p>
+  </div>
+
+  </div>
+  
+
+  <script>
+
+    document.getElementById('convert').addEventListener('submit', function(event){
+      event.preventDefault()
+      var distance = parseFloat( document.getElementById('mile').value);
+      conversion = (distance*1.688).toFixed(2)
+      var answer = document.getElementById('answer').innerHTML = ` ${distance} mile convert to ${conversion} kilometer`
+    })
+   
+    
+  </script>
+</body>
+</html>

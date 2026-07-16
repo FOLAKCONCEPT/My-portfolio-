@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <style>
+
+        body{
+            margin:0px;
+             background-image: url(flat.jpg);
+            background-position: fixed;
+            background-size: cover;
+        }
+        
+        .header{
+            background-color:rgba(72, 19, 19, 0.663);
+            padding:10px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: brown;
+        }
+        .hp{
+            font-size: 25px;
+            color:rgba(91, 11, 11, 0.573);
+        }
+        .hp:hover{
+            color: brown;
+            
+        }
+        input[type=text], input[type=number], input[type=date]{
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0px;
+            display: inline-block;
+            border:none;
+            border-radius: 4px; 
+            box-sizing: border-box;
+            color:white;
+            outline:none;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.8s ease-in-out;
+        }
+        input[type=text]:focus{
+            background-color: blanchedalmond;
+            color: brown;
+        }
+        /* input[type=number]{
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0px;
+            display: inline-block;
+            border:none;
+            border-radius: 4px; 
+            box-sizing: border-box;
+        } */
+        
+        input[type=submit]{
+            background-color:transparent;
+            width: 40%;
+            border: 3px solid brown;
+            margin: 10px 100px;
+            padding: 10px;
+            color: brown;
+            font-weight: bold;
+            border-radius: 10px;
+            align-items: center;
+        }
+        input[type=submit]:hover{
+            background-color: brown;
+            color: white;
+        }
+        .div{
+            background-color:rgba(113, 26, 26, 0.577);
+            border-radius: 4px;
+            padding: 20px;
+            margin: 50px 480px;
+            width: 25%;
+            position: fixed;
+            top:4px;
+            bottom:2px;
+        }
+        p, h1{
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+        p{
+            margin:10px;
+            color:rgba(255, 81, 0, 0.568);
+            font-weight: bold;
+        }
+        h1{
+            margin-top:0px;
+            font-weight: bold;
+        }
+        label{
+            color: white;
+        }
+        .nav{
+            background-color: rgb(73, 126, 19);
+            overflow: hidden;
+        }
+        /*li{
+           float:left;
+           display:block;
+           padding: 20px 30px;
+           text-align: center;
+           color: white;
+           font-weight: bold;
+           
+        }
+        li:hover{
+            background-color: rgb(44, 109, 63);
+        }*/
+
+        
+        .drop{
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;}
+        .img{
+            display:inline-block;
+            border-radius:60px;
+            width: 120px;
+            height: 75x;
+            margin-top: 0%;
+            margin-bottom:0%;
+            margin-right: 25%;
+            margin-left:25%;
+        }
+
+        .add{
+            color: yellow;
+            background-color: brown;
+            display: block;
+            width: 400px;
+            padding: 10px;
+        }
+
+
+    </style>
+    <body>
+        <!--<div class="header">
+            <header>EMPIRE OF SCHOLARS</header>
+            <p class="hp">Make knowledge Available for People</p>
+        </div> 
+        <div class="nav">
+                <li>Home</li>
+                <div class="drop">
+                    <li>Member</li>
+                </div>
+                <li>vission </li>
+                <li> Information</li>
+                <li>Contact</li>
+        </div>-->
+
+        
+
+
+        <div class="div">
+            <h1>FOLAK WEB DESIGN ACADEMY</h1>
+        <p>REGISTRATION FORM</p>
+            <form method="get">
+        <label for="fname">First name</label>
+        <input id="fname" type="text" placeholder="first name"  required>
+        <label for="lname" >last name</label>
+        <input id="lname" type="text" placeholder="last name">
+        <label for="NIN" >NIN</label>
+        <input id="NIN" type="text" placeholder="NIN">
+        <label for="DOB">date of birth</label>
+        <input type="date" placeholder="Date of birth" id="DOB" >
+        <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
